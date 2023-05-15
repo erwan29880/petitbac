@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  websitesite:
+    container_name: petitbac1
+    image: php:8.0-apache
+    ports:
+      - 8111:80
+    volumes:
+      - ./:/var/www/html
